@@ -1,0 +1,527 @@
+/* MegaSoft Gateway Admin Styles */
+
+.megasoft-dashboard {
+    display: grid;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* Status Card */
+.megasoft-status-card {
+    background: white;
+    border-left: 4px solid #00a32a;
+    padding: 20px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    border-radius: 4px;
+}
+
+.megasoft-status-card.warning {
+    border-left-color: #dba617;
+}
+
+.megasoft-status-card.error {
+    border-left-color: #d63638;
+}
+
+.megasoft-status-card h2 {
+    margin: 0 0 10px 0;
+    font-size: 18px;
+}
+
+.status-indicator {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.status-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #00a32a;
+    margin-right: 8px;
+    display: inline-block;
+}
+
+.megasoft-status-card.warning .status-dot {
+    background-color: #dba617;
+}
+
+.megasoft-status-card.error .status-dot {
+    background-color: #d63638;
+}
+
+.status-issues {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.status-issues li {
+    color: #646970;
+    font-size: 13px;
+}
+
+/* Stats Grid */
+.megasoft-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.stat-card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.stat-card.success {
+    border-top: 3px solid #00a32a;
+}
+
+.stat-card.error {
+    border-top: 3px solid #d63638;
+}
+
+.stat-card h3 {
+    margin: 0 0 10px 0;
+    font-size: 14px;
+    color: #646970;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.stat-number {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #1e1e1e;
+    line-height: 1;
+    margin-bottom: 5px;
+}
+
+.stat-amount {
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #2271b1;
+}
+
+.stat-percentage {
+    font-size: 12px;
+    color: #646970;
+}
+
+/* Quick Actions */
+.megasoft-quick-actions {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.megasoft-quick-actions h2 {
+    margin: 0 0 15px 0;
+    font-size: 18px;
+}
+
+.action-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.action-buttons .button {
+    flex: 0 0 auto;
+}
+
+/* Recent Transactions */
+.megasoft-recent-transactions {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.megasoft-recent-transactions h2 {
+    margin: 0 0 15px 0;
+    font-size: 18px;
+}
+
+/* Status Badges */
+.status-badge {
+    display: inline-block;
+    padding: 4px 8px;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 3px;
+    letter-spacing: 0.5px;
+}
+
+.status-badge.status-pending {
+    background: #f0f6fc;
+    color: #0969da;
+    border: 1px solid #d1d9e0;
+}
+
+.status-badge.status-approved {
+    background: #dafbe1;
+    color: #1a7f37;
+    border: 1px solid #aceebb;
+}
+
+.status-badge.status-failed {
+    background: #ffebe9;
+    color: #cf222e;
+    border: 1px solid #ffcccb;
+}
+
+/* Log Levels */
+.log-level {
+    display: inline-block;
+    padding: 2px 6px;
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 2px;
+    letter-spacing: 0.5px;
+}
+
+.log-level-error {
+    background: #d63638;
+    color: white;
+}
+
+.log-level-warn {
+    background: #dba617;
+    color: white;
+}
+
+.log-level-info {
+    background: #2271b1;
+    color: white;
+}
+
+.log-level-debug {
+    background: #646970;
+    color: white;
+}
+
+.log-context {
+    background: #f6f7f7;
+    border: 1px solid #c3c4c7;
+    border-radius: 4px;
+    padding: 10px;
+    margin-top: 10px;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.log-context pre {
+    margin: 0;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    font-size: 12px;
+}
+
+/* Reports */
+.megasoft-period-selector {
+    margin-bottom: 20px;
+}
+
+.megasoft-period-selector select {
+    padding: 8px 12px;
+    border-radius: 4px;
+    border: 1px solid #c3c4c7;
+}
+
+.megasoft-report-summary {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.summary-card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-align: center;
+    border-top: 3px solid #c3c4c7;
+}
+
+.summary-card.success {
+    border-top-color: #00a32a;
+}
+
+.summary-card.error {
+    border-top-color: #d63638;
+}
+
+.summary-card h3 {
+    margin: 0 0 10px 0;
+    font-size: 14px;
+    color: #646970;
+    text-transform: uppercase;
+}
+
+.summary-number {
+    font-size: 2em;
+    font-weight: bold;
+    color: #1e1e1e;
+    margin-bottom: 5px;
+}
+
+.summary-amount {
+    font-size: 1.3em;
+    font-weight: 600;
+    color: #2271b1;
+}
+
+.summary-percentage {
+    font-size: 12px;
+    color: #646970;
+}
+
+.megasoft-charts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.chart-container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.chart-container h3 {
+    margin: 0 0 20px 0;
+    font-size: 16px;
+    text-align: center;
+}
+
+.megasoft-report-details {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.megasoft-report-details h3 {
+    margin: 0 0 15px 0;
+    font-size: 16px;
+}
+
+/* Tools */
+.megasoft-tools-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.tool-card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-top: 3px solid #2271b1;
+}
+
+.tool-card h3 {
+    margin: 0 0 10px 0;
+    font-size: 16px;
+    color: #1e1e1e;
+}
+
+.tool-card p {
+    color: #646970;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.tool-card .button {
+    margin-right: 8px;
+    margin-bottom: 5px;
+}
+
+/* Order Meta Box */
+.megasoft-order-meta p {
+    margin: 5px 0;
+}
+
+.megasoft-order-meta strong {
+    display: block;
+    margin-bottom: 5px;
+    color: #1e1e1e;
+}
+
+.megasoft-order-meta code {
+    background: #f0f0f1;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-family: Consolas, Monaco, monospace;
+}
+
+.megasoft-actions {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #c3c4c7;
+}
+
+.megasoft-actions .button {
+    margin-right: 8px;
+    margin-bottom: 5px;
+}
+
+.megasoft-order-info {
+    font-size: 12px;
+    line-height: 1.3;
+}
+
+.megasoft-order-info code {
+    background: #f0f0f1;
+    padding: 1px 4px;
+    border-radius: 2px;
+    font-size: 11px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .megasoft-stats-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+    
+    .action-buttons {
+        flex-direction: column;
+    }
+    
+    .megasoft-charts {
+        grid-template-columns: 1fr;
+    }
+    
+    .chart-container {
+        min-width: 0;
+    }
+    
+    .megasoft-tools-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .megasoft-report-summary {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+}
+
+/* Loading States */
+.megasoft-loading {
+    position: relative;
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.megasoft-loading::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #c3c4c7;
+    border-top-color: #2271b1;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    animation: megasoft-spin 1s linear infinite;
+}
+
+@keyframes megasoft-spin {
+    to {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+/* Notifications */
+.megasoft-notification {
+    position: fixed;
+    top: 32px;
+    right: 20px;
+    background: white;
+    border-left: 4px solid #00a32a;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    padding: 15px 20px;
+    border-radius: 4px;
+    z-index: 9999;
+    min-width: 300px;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+}
+
+.megasoft-notification.show {
+    transform: translateX(0);
+}
+
+.megasoft-notification.error {
+    border-left-color: #d63638;
+}
+
+.megasoft-notification.warning {
+    border-left-color: #dba617;
+}
+
+.megasoft-notification .close {
+    float: right;
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    color: #646970;
+    margin-left: 10px;
+}
+
+/* Form Enhancements */
+.megasoft-form-section {
+    background: #f9f9f9;
+    border: 1px solid #e1e1e1;
+    border-radius: 6px;
+    padding: 15px;
+    margin: 15px 0;
+}
+
+.megasoft-form-section h4 {
+    margin: 0 0 10px 0;
+    color: #23282d;
+}
+
+.megasoft-field-description {
+    font-size: 13px;
+    color: #666;
+    margin-top: 5px;
+    font-style: italic;
+}
+
+/* Print Styles */
+@media print {
+    .megasoft-voucher-container {
+        page-break-inside: avoid;
+        border: 1px solid #000;
+        padding: 10px;
+        margin: 10px 0;
+    }
+    
+    .megasoft-voucher {
+        font-family: 'Courier New', monospace;
+        font-size: 12px;
+        line-height: 1.2;
+        white-space: pre-wrap;
+    }
+    
+    .receipt-actions {
+        display: none !important;
+    }
+}
